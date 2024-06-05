@@ -1,0 +1,175 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, rgba(185,66,255,0.9528186274509804) 0%, rgba(100,30,255,1) 50%);
+}
+
+.logo {
+  margin-top: -200px;
+}
+
+.logo img {
+  width: 200px; 
+}
+
+.titulo h3 {
+  font-size: 30px;
+  margin-bottom: 350px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.container {
+  perspective: 120px;
+  width: 300px;
+  height: 150px;
+  position: relative;
+}
+
+.tarjeta {
+  width: 50px;
+  height: 90px;
+  font-size: 40px;
+  position: absolute;
+  top: 20px;
+  left: 125px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  animation: Carrusel 20s linear infinite;
+}
+
+@keyframes Carrusel {
+  from {
+    transform: rotateY(360deg) translateZ(100px);
+    z-index: 10;
+    opacity: 0.9;
+  }
+  50% {
+    z-index: -10;
+  }
+  to {
+    transform: rotateX(0deg) translateZ(100px) rotateX(0deg);
+    z-index: 10;
+  }
+}
+
+#gears5, #pubg_battlegrounds, #call_of_duty, #genshin_impact, #gta_v, #halo_infinite, #metro_last_light, #overwatch2, #crysis, #valorant {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#gears5 {
+  background-image: url(../image/juegos/Gears_5.webp);
+}
+
+#gears5:hover {
+  box-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+#pubg_battlegrounds {
+  background-image: url(../image/juegos/BattleGrounds.webp);
+  animation-delay: -2s;
+}
+
+#pubg_battlegrounds:hover {
+  box-shadow: 0px 0px 10px rgb(184, 125, 0);
+}
+
+#call_of_duty {
+  background-image: url(../image/juegos/CallOfDuty.jpg);
+  animation-delay: -4s;
+}
+
+#call_of_duty:hover {
+  box-shadow: 0px 0px 10px rgb(255, 0, 85);
+}
+
+#genshin_impact {
+  background-image: url(../image/juegos/GenshinImpact.jpg);
+  animation-delay: -6s;
+}
+
+#genshin_impact:hover {
+  box-shadow: 0px 0px 10px rgb(140, 0, 255);
+}
+
+#gta_v {
+  background-image: url(../image/juegos/GTA_V.webp);
+  animation-delay: -8s;
+}
+
+#gta_v:hover {
+  box-shadow: 0px 0px 10px rgb(217, 255, 0);
+}
+
+#halo_infinite {
+  background-image: url(../image/juegos/Halo_infinite.webp);
+  animation-delay: -10s;
+}
+
+#halo_infinite:hover {
+  box-shadow: 0px 0px 10px rgb(123, 255, 0);
+}
+
+#metro_last_light {
+  background-image: url(../image/juegos/MetroLastLight.jpg);
+  animation-delay: -12s;
+}
+
+#metro_last_light:hover {
+  box-shadow: 0px 0px 10px rgb(223, 206, 61);
+}
+
+#overwatch2 {
+  background-image: url(../image/juegos/Overwatch_2.jpg);
+  animation-delay: -14s;
+}
+
+#overwatch2:hover {
+  box-shadow: 0px 0px 10px rgb(0, 255, 170);
+}
+
+#crysis {
+  background-image: url(../image/juegos/Crysis.jpg);
+  animation-delay: -16s;
+}
+
+#crysis:hover {
+  box-shadow: 0px 0px 10px rgb(0, 110, 255);
+}
+
+#valorant {
+  background-image: url(../image/juegos/Valorant.jpg);
+  animation-delay: -18s;
+}
+
+#valorant:hover {
+  box-shadow: 0px 0px 10px rgb(139, 0, 53);
+}
+
+.tarjeta h3 {
+  color: white;
+  font-size: 4px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 70px;
+  background-color: #5900ff;
+}
+
+.tarjeta h3:hover {
+  background-color: white;
+  transition: 1s;
+}
+
+.tarjeta a {
+  color: white;
+  text-decoration: none;
+}
+
+.tarjeta a h3:hover {
+  color: rgb(0, 140, 255);
+}

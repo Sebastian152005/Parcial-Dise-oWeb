@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+body {
+    font-family: 'Lato';
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(98,0,255,1) 100%);
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: rgb(83,83,83);
+    background: radial-gradient(circle, rgba(83,83,83,0.9528186274509804) 0%, rgba(0,0,0,1) 100%);
+    color: white;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: inline-block; 
+    margin-right: 20px; 
+    margin-bottom: -10px;
+    padding: 10px;
+}
+
+.logo img {
+    max-width: 130px; 
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    width: 100%; 
+    text-align: center; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.hardware {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.hardware-item {
+    background: #3700ff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 10px;
+    width: calc(33.333% - 20px);
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hardware-item img {
+    max-width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.hardware-item h3 {
+    margin: 10px 0;
+    color: rgb(255, 255, 255);
+}
+
+.hardware-item p {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    flex-grow: 1;
+}
+
+.hardware-item button {
+    background: #2f00ff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    align-self: flex-start;
+}
+
+.hardware-item button:hover {
+    background: #6200ff;
+}
+
+.hardware-item button:focus {
+    outline: 2px solid #333333;
+}

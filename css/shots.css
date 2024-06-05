@@ -1,0 +1,100 @@
+body {
+  min-height: 100%;
+  margin: 0;
+  background-image: url(../image/menu.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrap {
+  text-align: center;
+}
+
+.logo img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.container {
+  min-height: 100%;
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+.game-wrap {
+  position: relative;
+}
+
+canvas {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  border: 3px solid rgb(159, 255, 239);
+  display: block;
+  margin: 20px auto;
+}
+
+content {
+  color: #ccc;
+  text-align: center;
+  padding: 0 5%;
+}
+
+p {
+  color: rgb(24, 236, 226);
+  margin: 10px 0;
+  font-size: 20px;
+  line-height: 1.5em;
+  text-align: center;
+  font-weight: bold;
+}
+
+code {
+  background: linear-gradient(#222, #000);
+  line-height: 1.3em;
+  display: inline-block;
+  border-radius: 3px;
+  font-family: monospace;
+  padding: 1px 5px;
+  margin: 0 2px;
+  color: rgb(255, 255, 255);
+}
+
+a {
+  color: rgba(0, 119, 255, 0.719);
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+a:hover {
+  color: #b3e0f2;
+}
+
+.title {
+  font-size: 2.5vw;
+  font-weight: 900;
+  margin: 2% 0;
+  text-align: center;
+  position: relative;
+  top: -30px;
+}
+
+.title span {
+  color: hsl(231, 100%, 50%);
+}
+
+.title span:hover {
+  color: aqua;
+}
+
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 30px;
+  }
+}
